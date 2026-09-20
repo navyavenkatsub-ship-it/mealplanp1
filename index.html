@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Plan meals for the week and build a grocery list from them.">
+  <title>Weekly Meal Planner</title>
+</head>
+<body>
+
+<header id="top">
+  <h1>Weekly Meal Planner</h1>
+  <img src="mealplan.jpg" alt="Overhead view of eight glass containers of prepped meals: shrimp with red peppers, salmon with rice and lemon, chicken with celery, and eggs with broccoli">
+  <p>Add meals to the week, then check the grocery list before you shop.</p>
+  <nav aria-label="Page sections">
+    <ul>
+      <li><a href="#add-meal">Add a meal</a></li>
+      <li><a href="#week-plan">See this week's meals</a></li>
+      <li><a href="#grocery-list">Open the grocery list</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <main>
+
+    <section id="add-meal">
+      <h2>Add a meal</h2>
+      <form>
+        <p>
+          <label for="meal-name">Meal name (required)</label><br>
+          <input type="text" id="meal-name" name="meal-name" required>
+        </p>
+
+        <p>
+          <label for="day">Day (required)</label><br>
+          <select id="day" name="day" required>
+            <option value="">Choose a day</option>
+            <option value="monday">Monday</option>
+            <option value="tuesday">Tuesday</option>
+            <option value="wednesday">Wednesday</option>
+            <option value="thursday">Thursday</option>
+            <option value="friday">Friday</option>
+            <option value="saturday">Saturday</option>
+            <option value="sunday">Sunday</option>
+          </select>
+        </p>
+
+        <fieldset>
+          <legend>Meal type</legend>
+          <p>
+            <input type="radio" id="type-breakfast" name="meal-type" value="breakfast">
+            <label for="type-breakfast">Breakfast</label>
+          </p>
+          <p>
+            <input type="radio" id="type-lunch" name="meal-type" value="lunch">
+            <label for="type-lunch">Lunch</label>
+          </p>
+          <p>
+            <input type="radio" id="type-dinner" name="meal-type" value="dinner" checked>
+            <label for="type-dinner">Dinner</label>
+          </p>
+        </fieldset>
+
+        <p>
+          <label for="ingredients">Ingredients to buy (optional, one per line)</label><br>
+          <textarea id="ingredients" name="ingredients" rows="4" cols="40"></textarea>
+        </p>
+
+        <p>
+          <button type="submit">Add meal</button>
+        </p>
+      </form>
+    </section>
+
+    <section id="week-plan">
+      <h2>This week's meals</h2>
+      <table>
+        <caption>Planned meals by day</caption>
+        <thead>
+          <tr>
+            <th scope="col">Day</th>
+            <th scope="col">Breakfast</th>
+            <th scope="col">Lunch</th>
+            <th scope="col">Dinner</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Monday</th>
+            <td>Oatmeal</td>
+            <td>Chicken wrap</td>
+            <td>Veggie stir fry</td>
+          </tr>
+          <tr>
+            <th scope="row">Tuesday</th>
+            <td>Yogurt and fruit</td>
+            <td>Leftover stir fry</td>
+            <td>Pasta with tomato sauce</td>
+          </tr>
+          <tr>
+            <th scope="row">Wednesday</th>
+            <td>Not planned</td>
+            <td>Not planned</td>
+            <td>Not planned</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="grocery-list">
+      <h2>Grocery list</h2>
+
+      <form>
+        <fieldset>
+          <legend>Items to buy (check off as you shop)</legend>
+          <p>
+            <input type="checkbox" id="item-1" name="item-1">
+            <label for="item-1">Oats</label>
+          </p>
+          <p>
+            <input type="checkbox" id="item-2" name="item-2">
+            <label for="item-2">Chicken breast</label>
+          </p>
+          <p>
+            <input type="checkbox" id="item-3" name="item-3">
+            <label for="item-3">Bell peppers</label>
+          </p>
+          <p>
+            <input type="checkbox" id="item-4" name="item-4">
+            <label for="item-4">Pasta</label>
+          </p>
+        </fieldset>
+      </form>
+
+      <form>
+        <p>
+          <label for="new-item">Add an item</label><br>
+          <input type="text" id="new-item" name="new-item">
+        </p>
+        <p>
+          <button type="submit">Add to grocery list</button>
+        </p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Weekly Meal Planner, prototype version 1</p>
+    <p><a href="#top">Back to top of page</a></p>
+  </footer>
+
+</body>
+</html>
