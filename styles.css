@@ -1,0 +1,198 @@
+/* base */
+body {
+  margin: 0;
+  background-color: #fdeaf0;
+  color: #2b1118;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+main,
+header,
+footer {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* typography */
+h1,
+h2,
+h3,
+legend,
+label,
+button,
+th,
+caption {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  margin: 2rem 0 1rem;
+  color: #6d1230;
+  font-size: 2.5rem;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  margin: 0 0 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 3px solid #f08a24;
+  color: #6d1230;
+  font-size: 1.5rem;
+  line-height: 1.25;
+}
+
+/* header and hero image */
+header img {
+  display: block;
+  width: 100%;
+  height: 16rem;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+header p {
+  margin: 0 0 2rem;
+  font-size: 1.2rem;
+}
+
+/* sections as cards */
+section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #fffafc;
+  border: 1px solid #f1c4d3;
+  border-radius: 0.75rem;
+}
+
+/* forms */
+label {
+  display: inline-block;
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+input[type="text"],
+select,
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: 2px solid #8c5a6a;
+  border-radius: 0.4rem;
+  background-color: #ffffff;
+  color: #2b1118;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+fieldset {
+  margin: 1rem 0;
+  padding: 0.75rem 1rem;
+  border: 1px solid #f1c4d3;
+  border-radius: 0.5rem;
+}
+
+legend {
+  padding: 0 0.5rem;
+  font-weight: bold;
+}
+
+fieldset p {
+  margin: 0.4rem 0;
+}
+
+fieldset label {
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  accent-color: #6d1230;
+}
+
+button {
+  padding: 0.7rem 1.4rem;
+  border: 2px solid #6d1230;
+  border-radius: 0.4rem;
+  background-color: #6d1230;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f08a24;
+  border-color: #f08a24;
+  color: #3b0a1a;
+}
+
+/* keyboard focus */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: 3px solid #d9560b;
+  outline-offset: 2px;
+}
+
+/* meal table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+caption {
+  padding-bottom: 0.5rem;
+  color: #6b4a55;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 0.7rem 0.75rem;
+  border: 1px solid #f1c4d3;
+  text-align: left;
+}
+
+thead th {
+  background-color: #6d1230;
+  color: #ffffff;
+}
+
+tbody th {
+  background-color: #fbd5e2;
+}
+
+tbody tr:nth-child(even) td {
+  background-color: #fdf0f4;
+}
+
+/* footer */
+footer {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  color: #6b4a55;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+
+<!--
+AI Use Disclosure:
+Tool(s): Claude
+Purpose: Helped come up with some design layout ideas, whether it should be left aligned or center aligned. But I ended up choosing center because it looks better.
+Human Role: I applied the idea to my project, used the recommended CSS code but tweaked a lot of it to fit what I was going for.  -->
